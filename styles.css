@@ -1,0 +1,336 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body,html{
+    font-size: 18px;
+    position: relative;
+    overflow-x: hidden;
+}
+h1, h5, .flex-box a{
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 900;
+}
+a{
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+}
+p{
+    font-family: 'Barlow',sans-serif;
+    font-weight: 600;
+}
+ul,li{
+    list-style: none;
+    font-family: 'Barlow', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header{
+    background: url('images/desktop/image-header.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.navbar{
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+}
+.navbar li{
+    margin-left: 20px;
+}
+.navbar a{
+    color: #fff;
+    font-size: 15px;
+}
+.navbar li span{
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: hsl(212, 27%, 19%);
+    background-color: #fff;
+    border-radius: 35px;
+    padding: 10px 20px;
+}
+.navbar li span:hover{
+    color: #fff;
+    background-color:hsl(197, 80%, 68%);
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.heading h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 50px;
+}
+.flex-box{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex{
+    flex: 0 0 50%;
+    margin: auto;
+}
+.flex h1{
+    color: hsl(212, 27%, 19%);
+}
+.flex p{
+    color: hsl(232, 10%, 55%);
+    margin: 30px 0;
+    line-height: 1.5;
+    font-weight: 500;
+}
+.flex1,.flex4{
+    padding: 0 100px;
+}
+.flex2{
+    margin: 0;
+}
+.flex3 {
+    margin: 0;
+}
+.flex5{
+    background: url('images/desktop/image-graphic-design.jpg') no-repeat;
+    background-position: center;
+    height: 600px;
+    text-align: center;
+}
+.flex6{
+    background: url('images/desktop/image-photography.jpg') no-repeat;
+    background-position: center;
+    height: 600px;
+    text-align: center;
+}
+.flex5 h1, .flex6 h1{
+    margin-top: 350px;
+    padding: 0 100px;
+}
+.flex5 p,.flex6 p{
+    padding: 0 100px;
+}
+.flex5 h1, .flex5 p{
+    color:hsl(167, 40%, 24%);
+}
+.flex6 h1,.flex6 p{
+    color:hsl(198, 62%, 26%);
+}
+.flex img{
+    height: 100%;
+    width: 100%;
+}
+.btn{
+    color:hsl(212, 27%, 19%);
+    text-transform: uppercase;
+    position: relative;
+}
+.btn-yellow::before{
+    content: '';
+  position: absolute;
+  bottom: 0;
+  left: -0.3rem;
+  right: -0.3rem;
+  height: 0.5rem;
+  background-color: hsl(51, 100%, 49%);
+  border-radius: 10rem;
+  opacity: 0.4;
+  transition: 0.4s ease-in-out;
+  z-index: -1;
+}
+.btn-orange::before{
+    content: '';
+  position: absolute;
+  bottom: 0;
+  left: -0.3rem;
+  right: -0.3rem;
+  height: 0.5rem;
+  background-color: hsl(7, 99%, 70%);
+  border-radius: 10rem;
+  opacity: 0.4;
+  transition: 0.4s ease-in-out;
+  z-index: -1;
+}
+.btn-yellow:hover::before,
+.btn-orange:hover::before{
+    opacity: unset;
+}
+.tes{
+    max-width: 1100px;
+    text-align: center;
+}
+.tes h1{
+    padding: 100px 0 50px 0;
+    color: hsl(210, 4%, 67%);
+}
+.testimonials img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+.testimonials{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    margin-bottom: 100px;
+}
+.testimonial p{
+    font-weight: 500;
+    margin: 30px 0;
+    color:hsl(212, 27%, 19%);
+}
+.testimonial h5{
+    color: hsl(212, 27%, 19%);
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+.pictures{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+}
+.pictures img{
+    width: auto;
+    height: 500px;
+}
+.footer{
+    background-color: hsl(168, 34%, 41%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    opacity: 0.9;
+}
+.footer .logo{
+    filter:invert(100);
+    margin-bottom: 40px;
+}
+.footer ul{
+    display: flex;
+}
+.footer li a{
+    margin: 0 15px;
+    color: hsl(167, 40%, 24%);
+}
+.footer .icons{
+    margin-top: 40px;
+}
+.icons img{
+    margin: 0 10px;
+}
+.icons img:hover{
+    transform: scale(1.3);
+}
+.footer li a:hover{
+    color: #fff;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+@media(max-width:600px){
+    .hamburger{
+        display: block;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .header{
+        background: url('images/mobile/image-header.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .heading h1{
+        font-size: 2.8rem;
+        text-align: center;
+        margin-top: 70px;
+    }
+    .flex-box{
+        flex-direction: column;
+    }
+    .flex{
+        text-align: center;
+    }
+    .flex1, .flex4{
+        padding: 50px;
+    }
+    .flex2{
+        order: -1;
+    }
+    .flex5{
+        background: url('images/mobile/image-graphic-design.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .flex6{
+        background: url('images/mobile/image-photography.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .flex5 h1, .flex6 h1{
+        margin-top: 350px;
+        padding: 0;
+    }
+    .flex5 p,.flex6 p{
+        padding: 0 50px;
+    }
+    .tes h1{
+        font-size: 1.5rem;
+    }
+    .testimonials{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .info{
+        margin-bottom: 70px;
+    }
+    .pictures{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .pictures img{
+        height: 200px;
+        width: 100%;
+    }
+    .hidden .navbar ul{
+        display: block;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100px;
+        margin: 0 auto;
+        width: 80%;
+        padding: 50px;
+        text-align: center;
+    }
+    .navbar li a{
+        color: hsl(232, 10%, 55%);
+        line-height: 4;
+        margin: 0;
+    }
+    .navbar li span{
+        background-color: hsl(51, 100%, 49%);
+    }
+}
